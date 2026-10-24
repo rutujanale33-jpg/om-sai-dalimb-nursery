@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,57 +27,68 @@
     <!-- TOP BAR -->
     <div class="topbar">
         <div class="container topbar-inner">
-            <p>📍 Astagaon Phata, near Shirdi, Maharashtra 423107</p>
+            <p data-i18n="location">
+                📍 Astagaon Phata, near Shirdi, Maharashtra 423107
+            </p>
         </div>
     </div>
 
-<!-- NAVIGATION -->
-<header class="navbar">
-    <div class="container navbar-inner">
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container navbar-inner">
 
-        <a href="index.html" class="brand" aria-label="Om Sai Dalimb Nursery homepage">
+            <a href="index.html" class="brand"
+                aria-label="Om Sai Dalimb Nursery homepage">
 
-            <img src="images/logo/L1.png"
-                alt="Om Sai Dalimb Nursery logo"
-                onerror="this.style.display='none'"
-                decoding="async">
+                <img src="images/logo/L1.png"
+                    alt="Om Sai Dalimb Nursery logo"
+                    onerror="this.style.display='none'"
+                    decoding="async">
 
-            <span class="brand-text">
-                <span class="brand-name">OM SAI DALIMB NURSERY</span>
-                <span class="brand-tagline">YOUR POMEGRANATE PLANT PARTNER</span>
-            </span>
+                <span class="brand-text">
+                    <span class="brand-name">OM SAI DALIMB NURSERY</span>
+                    <span class="brand-tagline" data-i18n="brandTagline">
+                        YOUR POMEGRANATE PLANT PARTNER
+                    </span>
+                </span>
 
-        </a>
+            </a>
 
-        <nav class="navMenu" id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="varieties.html">Varieties</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <nav class="navMenu" id="navMenu" aria-label="Main navigation">
 
-        <!-- Language selector replaces Enquire Now -->
-        <select class="language-selector"
-            data-language-selector
-            aria-label="Choose language">
-            <option value="en">English</option>
-            <option value="mr">मराठी</option>
-            <option value="hi">हिंदी</option>
-        </select>
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="about.html" data-i18n="about">About Us</a>
+                <a href="varieties.html" data-i18n="varieties">Varieties</a>
+                <a href="gallery.html" data-i18n="gallery">Gallery</a>
+                <a href="contact.html" data-i18n="contact">Contact</a>
 
-        <button class="nav-toggle"
-            id="navToggle"
-            type="button"
-            aria-label="Open navigation menu"
-            aria-controls="navMenu"
-            aria-expanded="false">
-            ☰
-        </button>
+            </nav>
 
-    </div>
-</header>
+            <!-- LANGUAGE SELECTOR: REPLACES ENQUIRE NOW -->
+            <select class="language-selector"
+                data-language-selector
+                aria-label="Choose language">
 
+                <option value="en">English</option>
+                <option value="mr">मराठी</option>
+                <option value="hi">हिंदी</option>
+
+            </select>
+
+            <!-- MOBILE HAMBURGER -->
+            <button class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="navMenu"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+        </div>
+    </header>
 
     <main>
 
@@ -88,51 +100,59 @@
                 <div class="hero-content">
 
                     <span class="hero-badge" data-i18n="heroBadge">
-    🌱 POMEGRANATE PLANT NURSERY
-</span>
+                        🌱 POMEGRANATE PLANT NURSERY
+                    </span>
 
-<span class="eyebrow" data-i18n="heroEyebrow">
-    GROW WITH CONFIDENCE
-</span>
+                    <span class="eyebrow" data-i18n="heroEyebrow">
+                        GROW WITH CONFIDENCE
+                    </span>
 
-<h1>
-    <span data-i18n="heroTitle">Start Your Orchard with the Right</span>
-    <span data-i18n="heroTitleHighlight">Pomegranate Plants.</span>
-</h1>
+                    <h1>
+                        <span data-i18n="heroTitle">
+                            Start Your Orchard with the Right
+                        </span>
+                        <span data-i18n="heroTitleHighlight">
+                            Pomegranate Plants.
+                        </span>
+                    </h1>
 
-<p data-i18n="heroDescription">
-    Discover pomegranate plant varieties at Om Sai Dalimb Nursery,
-    near Shirdi, Maharashtra. Contact us to discuss plant availability,
-    quantities and nursery rates for your orchard.
-</p>
+                    <p data-i18n="heroDescription">
+                        Discover pomegranate plant varieties at Om Sai Dalimb
+                        Nursery, near Shirdi, Maharashtra. Contact us to discuss
+                        plant availability, quantities and nursery rates for
+                        your orchard.
+                    </p>
 
-<div class="btn-group">
+                    <div class="btn-group">
 
-    <a href="varieties.html" class="btn btn-red" data-i18n="exploreVarieties">
-        Explore Varieties →
-    </a>
+                        <a href="varieties.html"
+                            class="btn btn-red"
+                            data-i18n="exploreVarieties">
+                            Explore Varieties →
+                        </a>
 
-    <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20pomegranate%20plants."
-       class="btn btn-outline"
-       target="_blank"
-       rel="noopener noreferrer"
-       data-i18n="whatsappEnquiry">
-        WhatsApp Enquiry
-    </a>
+                        <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20pomegranate%20plants."
+                            class="btn btn-outline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="whatsappEnquiry">
+                            WhatsApp Enquiry
+                        </a>
 
-</div>
+                    </div>
 
-<div class="hero-points">
-    <span data-i18n="heroPoint1">✓ Pomegranate Plants</span>
-    <span data-i18n="heroPoint2">✓ Multiple Varieties</span>
-    <span data-i18n="heroPoint3">✓ Wholesale Enquiries</span>
-</div>
+                    <div class="hero-points">
+
+                        <span data-i18n="heroPoint1">✓ Pomegranate Plants</span>
+                        <span data-i18n="heroPoint2">✓ Multiple Varieties</span>
+                        <span data-i18n="heroPoint3">✓ Wholesale Enquiries</span>
+
+                    </div>
 
                 </div>
 
                 <div class="hero-image">
 
-                    <!-- Main hero image loads eagerly for faster first display -->
                     <img src="images/nursery/n8.jpeg"
                         alt="Pomegranate plants growing in a nursery"
                         fetchpriority="high"
@@ -152,32 +172,32 @@
                 <div class="trust-item">
                     <div class="trust-icon">🌱</div>
                     <div>
-                        <strong>Pomegranate Plants</strong>
-                        <small>Nursery specialisation</small>
+                        <strong data-i18n="trustPlants">Pomegranate Plants</strong>
+                        <small data-i18n="trustPlantsSub">Nursery specialisation</small>
                     </div>
                 </div>
 
                 <div class="trust-item">
                     <div class="trust-icon">🍎</div>
                     <div>
-                        <strong>Multiple Varieties</strong>
-                        <small>Explore your options</small>
+                        <strong data-i18n="trustVarieties">Multiple Varieties</strong>
+                        <small data-i18n="trustVarietiesSub">Explore your options</small>
                     </div>
                 </div>
 
                 <div class="trust-item">
                     <div class="trust-icon">📦</div>
                     <div>
-                        <strong>Bulk Enquiries</strong>
-                        <small>Discuss your requirements</small>
+                        <strong data-i18n="trustBulk">Bulk Enquiries</strong>
+                        <small data-i18n="trustBulkSub">Discuss your requirements</small>
                     </div>
                 </div>
 
                 <div class="trust-item">
                     <div class="trust-icon">📍</div>
                     <div>
-                        <strong>Near Shirdi</strong>
-                        <small>Maharashtra, India</small>
+                        <strong data-i18n="trustLocation">Near Shirdi</strong>
+                        <small data-i18n="trustLocationSub">Maharashtra, India</small>
                     </div>
                 </div>
 
@@ -193,15 +213,18 @@
                 <div class="section-heading">
 
                     <span class="eyebrow" data-i18n="plantsEyebrow">
-    OUR POMEGRANATE PLANTS
-</span>
+                        OUR POMEGRANATE PLANTS
+                    </span>
 
-<h2 data-i18n="exploreOurVarieties">Explore Our Varieties</h2>
+                    <h2 data-i18n="exploreOurVarieties">
+                        Explore Our Varieties
+                    </h2>
 
-<p data-i18n="varietiesDescription">
-    Find out more about our pomegranate plant varieties.
-    Contact the nursery to confirm current availability and pricing.
-</p>
+                    <p data-i18n="varietiesDescription">
+                        Find out more about our pomegranate plant varieties.
+                        Contact the nursery to confirm current availability
+                        and pricing.
+                    </p>
 
                 </div>
 
@@ -222,26 +245,27 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 01</span>
+                            <span class="eyebrow" data-i18n="variety01">
+                                VARIETY 01
+                            </span>
 
-                            <h3>Bhagwa Pomegranate</h3>
+                            <h3 data-i18n="bhagwaTitle">
+                                Bhagwa Pomegranate
+                            </h3>
 
-                            <span class="eyebrow" data-i18n="variety01">VARIETY 01</span>
+                            <p data-i18n="bhagwaDescription">
+                                Explore the Bhagwa variety for your pomegranate
+                                cultivation plans. Contact us for plant details
+                                and availability.
+                            </p>
 
-<h3 data-i18n="bhagwaTitle">Bhagwa Pomegranate</h3>
-
-<p data-i18n="bhagwaDescription">
-    Explore the Bhagwa variety for your pomegranate cultivation plans.
-    Contact us for plant details and availability.
-</p>
-
-<a href="https://wa.me/918007240943?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Bhagwa%20pomegranate%20plants."
-   class="variety-link"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-i18n="enquireBhagwa">
-    Enquire about Bhagwa →
-</a>
+                            <a href="https://wa.me/918007240943?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Bhagwa%20pomegranate%20plants."
+                                class="variety-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-i18n="enquireBhagwa">
+                                Enquire about Bhagwa →
+                            </a>
 
                         </div>
 
@@ -262,20 +286,25 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 02</span>
+                            <span class="eyebrow" data-i18n="variety02">
+                                VARIETY 02
+                            </span>
 
-                            <h3>Super Bhagwa</h3>
+                            <h3 data-i18n="superBhagwaTitle">
+                                Super Bhagwa
+                            </h3>
 
-                            <p>
-                                Learn more about Super Bhagwa pomegranate plants
-                                and discuss your orchard requirements directly
-                                with the nursery.
+                            <p data-i18n="superBhagwaDescription">
+                                Learn more about Super Bhagwa pomegranate
+                                plants and discuss your orchard requirements
+                                directly with the nursery.
                             </p>
 
                             <a href="https://wa.me/918007240943?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Super%20Bhagwa%20pomegranate%20plants."
                                 class="variety-link"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="enquireSuperBhagwa">
                                 Enquire about Super Bhagwa →
                             </a>
 
@@ -298,11 +327,15 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 03</span>
+                            <span class="eyebrow" data-i18n="variety03">
+                                VARIETY 03
+                            </span>
 
-                            <h3>Shard King</h3>
+                            <h3 data-i18n="shardKingTitle">
+                                Shard King
+                            </h3>
 
-                            <p>
+                            <p data-i18n="shardKingDescription">
                                 Interested in Shard King? Contact us to learn
                                 about plant availability and suitability for
                                 your cultivation plans.
@@ -311,7 +344,8 @@
                             <a href="https://wa.me/918007240943?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Shard%20King%20pomegranate%20plants."
                                 class="variety-link"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="enquireShardKing">
                                 Enquire about Shard King →
                             </a>
 
@@ -323,7 +357,9 @@
 
                 <div class="text-center mt-3">
 
-                    <a href="varieties.html" class="btn btn-outline">
+                    <a href="varieties.html"
+                        class="btn btn-outline"
+                        data-i18n="viewAllVarieties">
                         View All Varieties →
                     </a>
 
@@ -350,17 +386,21 @@
 
                 <div class="about-content">
 
-                    <span class="eyebrow">ABOUT OUR NURSERY</span>
+                    <span class="eyebrow" data-i18n="aboutEyebrow">
+                        ABOUT OUR NURSERY
+                    </span>
 
-                    <h2>Your Pomegranate Nursery Near Shirdi</h2>
+                    <h2 data-i18n="aboutTitle">
+                        Your Pomegranate Nursery Near Shirdi
+                    </h2>
 
-                    <p>
+                    <p data-i18n="aboutParagraph1">
                         Om Sai Dalimb Nursery specialises in pomegranate plants
                         and serves customers from Astagaon Phata, near Shirdi,
                         Maharashtra.
                     </p>
 
-                    <p>
+                    <p data-i18n="aboutParagraph2">
                         Whether you are planning a new orchard or enquiring
                         about plants in bulk, contact us to discuss your
                         requirements and available varieties.
@@ -371,30 +411,44 @@
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Focused Selection</strong>
-                                <p>Bhagwa, Super Bhagwa and Shard King varieties.</p>
+                                <strong data-i18n="feature1Title">
+                                    Focused Selection
+                                </strong>
+                                <p data-i18n="feature1Description">
+                                    Bhagwa, Super Bhagwa and Shard King varieties.
+                                </p>
                             </div>
                         </li>
 
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Direct Enquiries</strong>
-                                <p>Discuss quantities, prices and availability with us.</p>
+                                <strong data-i18n="feature2Title">
+                                    Direct Enquiries
+                                </strong>
+                                <p data-i18n="feature2Description">
+                                    Discuss quantities, prices and availability with us.
+                                </p>
                             </div>
                         </li>
 
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Convenient Contact</strong>
-                                <p>Reach the nursery by phone or WhatsApp.</p>
+                                <strong data-i18n="feature3Title">
+                                    Convenient Contact
+                                </strong>
+                                <p data-i18n="feature3Description">
+                                    Reach the nursery by phone or WhatsApp.
+                                </p>
                             </div>
                         </li>
 
                     </ul>
 
-                    <a href="about.html" class="btn btn-primary">
+                    <a href="about.html"
+                        class="btn btn-primary"
+                        data-i18n="learnAboutUs">
                         Learn About Us →
                     </a>
 
@@ -411,13 +465,17 @@
 
                 <div class="section-heading">
 
-                    <span class="eyebrow">A LOOK AT OUR NURSERY</span>
+                    <span class="eyebrow" data-i18n="galleryEyebrow">
+                        A LOOK AT OUR NURSERY
+                    </span>
 
-                    <h2>Our Pomegranate Plants</h2>
+                    <h2 data-i18n="plantsSectionTitle">
+                        Our Pomegranate Plants
+                    </h2>
 
-                    <p>
-                        Explore nursery and plant photographs.
-                        Actual plant images can be added as they become available.
+                    <p data-i18n="galleryDescription">
+                        Explore nursery and plant photographs. Actual plant
+                        images can be added as they become available.
                     </p>
 
                 </div>
@@ -429,7 +487,9 @@
                             alt="Pomegranate nursery"
                             loading="lazy"
                             decoding="async">
-                        <span class="gallery-caption">Our Nursery</span>
+                        <span class="gallery-caption" data-i18n="ourNursery">
+                            Our Nursery
+                        </span>
                     </a>
 
                     <a href="gallery.html" class="gallery-item">
@@ -438,7 +498,9 @@
                             loading="lazy"
                             decoding="async"
                             onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
-                        <span class="gallery-caption">Bhagwa</span>
+                        <span class="gallery-caption" data-i18n="bhagwa">
+                            Bhagwa
+                        </span>
                     </a>
 
                     <a href="gallery.html" class="gallery-item">
@@ -447,7 +509,9 @@
                             loading="lazy"
                             decoding="async"
                             onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
-                        <span class="gallery-caption">Super Bhagwa</span>
+                        <span class="gallery-caption" data-i18n="superBhagwaTitle">
+                            Super Bhagwa
+                        </span>
                     </a>
 
                     <a href="gallery.html" class="gallery-item">
@@ -456,14 +520,18 @@
                             loading="lazy"
                             decoding="async"
                             onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
-                        <span class="gallery-caption">Shard King</span>
+                        <span class="gallery-caption" data-i18n="shardKingTitle">
+                            Shard King
+                        </span>
                     </a>
 
                 </div>
 
                 <div class="text-center mt-3">
 
-                    <a href="gallery.html" class="btn btn-outline">
+                    <a href="gallery.html"
+                        class="btn btn-outline"
+                        data-i18n="exploreGallery">
                         Explore Gallery →
                     </a>
 
@@ -482,13 +550,16 @@
 
                     <div>
 
-                        <span class="eyebrow" style="color: #e9c5a2;">
+                        <span class="eyebrow cta-eyebrow"
+                            data-i18n="ctaEyebrow">
                             LET'S DISCUSS YOUR REQUIREMENTS
                         </span>
 
-                        <h2>Planning Your Pomegranate Orchard?</h2>
+                        <h2 data-i18n="ctaTitle">
+                            Planning Your Pomegranate Orchard?
+                        </h2>
 
-                        <p>
+                        <p data-i18n="ctaDescription">
                             Contact Om Sai Dalimb Nursery to enquire about
                             plant varieties, availability and wholesale rates.
                         </p>
@@ -500,11 +571,14 @@
                         <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20pomegranate%20plants%20and%20wholesale%20rates."
                             class="btn btn-white"
                             target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                            data-i18n="enquireWhatsApp">
                             💬 Enquire on WhatsApp
                         </a>
 
-                        <a href="tel:+918007240943" class="btn btn-outline">
+                        <a href="tel:+918007240943"
+                            class="btn btn-outline"
+                            data-i18n="callNursery">
                             Call the Nursery
                         </a>
 
@@ -523,9 +597,13 @@
 
                 <div class="section-heading">
 
-                    <span class="eyebrow">COMMON QUESTIONS</span>
+                    <span class="eyebrow" data-i18n="faqEyebrow">
+                        COMMON QUESTIONS
+                    </span>
 
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 data-i18n="faqTitle">
+                        Frequently Asked Questions
+                    </h2>
 
                 </div>
 
@@ -533,9 +611,11 @@
 
                     <article class="faq-item">
 
-                        <h3>Which pomegranate varieties can I enquire about?</h3>
+                        <h3 data-i18n="faqQuestion1">
+                            Which pomegranate varieties can I enquire about?
+                        </h3>
 
-                        <p>
+                        <p data-i18n="faqAnswer1">
                             You can enquire about Bhagwa, Super Bhagwa and
                             Shard King. Please contact us to confirm current
                             availability.
@@ -545,9 +625,11 @@
 
                     <article class="faq-item">
 
-                        <h3>Can I enquire about wholesale rates?</h3>
+                        <h3 data-i18n="faqQuestion2">
+                            Can I enquire about wholesale rates?
+                        </h3>
 
-                        <p>
+                        <p data-i18n="faqAnswer2">
                             Yes. Contact the nursery with your required quantity
                             to discuss current pricing and availability.
                         </p>
@@ -556,9 +638,11 @@
 
                     <article class="faq-item">
 
-                        <h3>Where is Om Sai Dalimb Nursery located?</h3>
+                        <h3 data-i18n="faqQuestion3">
+                            Where is Om Sai Dalimb Nursery located?
+                        </h3>
 
-                        <p>
+                        <p data-i18n="faqAnswer3">
                             Our nursery is located at Astagaon Phata, near
                             Shirdi, Maharashtra 423107.
                         </p>
@@ -567,9 +651,11 @@
 
                     <article class="faq-item">
 
-                        <h3>How can I contact the nursery?</h3>
+                        <h3 data-i18n="faqQuestion4">
+                            How can I contact the nursery?
+                        </h3>
 
-                        <p>
+                        <p data-i18n="faqAnswer4">
                             Call +91 80072 40943 or contact us through WhatsApp
                             using the enquiry buttons on this website.
                         </p>
@@ -603,12 +689,14 @@
 
                         <span class="brand-text">
                             <span class="brand-name">OM SAI DALIMB NURSERY</span>
-                            <span class="brand-tagline">POMEGRANATE PLANTS</span>
+                            <span class="brand-tagline" data-i18n="footerTagline">
+                                POMEGRANATE PLANTS
+                            </span>
                         </span>
 
                     </a>
 
-                    <p class="mt-2">
+                    <p class="mt-2" data-i18n="footerDescription">
                         Your point of contact for pomegranate plant enquiries
                         near Shirdi, Maharashtra.
                     </p>
@@ -617,33 +705,33 @@
 
                 <div>
 
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="quickLinks">Quick Links</h3>
 
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="varieties.html">Varieties</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="varieties.html" data-i18n="varieties">Varieties</a></li>
+                        <li><a href="gallery.html" data-i18n="gallery">Gallery</a></li>
+                        <li><a href="about.html" data-i18n="about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                     </ul>
 
                 </div>
 
                 <div>
 
-                    <h3>Our Varieties</h3>
+                    <h3 data-i18n="ourVarieties">Our Varieties</h3>
 
                     <ul class="footer-links">
-                        <li><a href="varieties.html">Bhagwa</a></li>
-                        <li><a href="varieties.html">Super Bhagwa</a></li>
-                        <li><a href="varieties.html">Shard King</a></li>
+                        <li><a href="varieties.html" data-i18n="bhagwa">Bhagwa</a></li>
+                        <li><a href="varieties.html" data-i18n="superBhagwaTitle">Super Bhagwa</a></li>
+                        <li><a href="varieties.html" data-i18n="shardKingTitle">Shard King</a></li>
                     </ul>
 
                 </div>
 
                 <div>
 
-                    <h3>Contact Us</h3>
+                    <h3 data-i18n="contactUs">Contact Us</h3>
 
                     <ul class="footer-links">
 
@@ -654,7 +742,8 @@
                         </li>
 
                         <li>
-                            <a href="mailto:jejurkarsagar766@gmail.com">
+                            <a href="mailto:jejurkarsagar766@gmail.com"
+                                data-i18n="emailNursery">
                                 Email the Nursery
                             </a>
                         </li>
@@ -662,13 +751,14 @@
                         <li>
                             <a href="https://wa.me/918007240943"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="whatsappEnquiry">
                                 WhatsApp Enquiry
                             </a>
                         </li>
 
                         <li>
-                            <span>
+                            <span data-i18n="locationFooter">
                                 Astagaon Phata, near Shirdi,
                                 Maharashtra 423107
                             </span>
@@ -684,7 +774,9 @@
 
                 <p>
                     &copy; <span id="currentYear"></span>
-                    Om Sai Dalimb Nursery. All rights reserved.
+                    <span data-i18n="copyright">
+                        Om Sai Dalimb Nursery. All rights reserved.
+                    </span>
                 </p>
 
             </div>
@@ -699,51 +791,82 @@
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact Om Sai Dalimb Nursery on WhatsApp">
+
         ☎
+
     </a>
 
-    <!-- JAVASCRIPT -->
+    <!-- NAVIGATION JAVASCRIPT -->
     <script>
-        const navToggle = document.getElementById("navToggle");
-        const navMenu = document.getElementById("navMenu");
+        (function () {
+            const navToggle = document.getElementById("navToggle");
+            const navMenu = document.getElementById("navMenu");
 
-        if (navToggle && navMenu) {
+            if (navToggle && navMenu) {
 
-            navToggle.addEventListener("click", function () {
+                navToggle.addEventListener("click", function () {
 
-                const isOpen = navMenu.classList.toggle("show");
+                    const isOpen = navMenu.classList.toggle("show");
 
-                navToggle.setAttribute("aria-expanded", String(isOpen));
+                    navToggle.setAttribute("aria-expanded", String(isOpen));
 
-                navToggle.setAttribute(
-                    "aria-label",
-                    isOpen ? "Close navigation menu" : "Open navigation menu"
-                );
+                    navToggle.setAttribute(
+                        "aria-label",
+                        isOpen
+                            ? "Close navigation menu"
+                            : "Open navigation menu"
+                    );
 
-                navToggle.textContent = isOpen ? "✕" : "☰";
+                    navToggle.textContent = isOpen ? "✕" : "☰";
+                });
 
-            });
+                navMenu.querySelectorAll("a").forEach(function (link) {
 
-            navMenu.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", function () {
 
-                link.addEventListener("click", function () {
+                        navMenu.classList.remove("show");
 
-                    navMenu.classList.remove("show");
+                        navToggle.setAttribute("aria-expanded", "false");
+                        navToggle.setAttribute(
+                            "aria-label",
+                            "Open navigation menu"
+                        );
 
-                    navToggle.setAttribute("aria-expanded", "false");
-                    navToggle.setAttribute("aria-label", "Open navigation menu");
-                    navToggle.textContent = "☰";
+                        navToggle.textContent = "☰";
+                    });
 
                 });
 
-            });
+                document.addEventListener("click", function (event) {
 
-        }
+                    if (
+                        !navMenu.contains(event.target) &&
+                        !navToggle.contains(event.target) &&
+                        navMenu.classList.contains("show")
+                    ) {
+                        navMenu.classList.remove("show");
+                        navToggle.setAttribute("aria-expanded", "false");
+                        navToggle.setAttribute(
+                            "aria-label",
+                            "Open navigation menu"
+                        );
+                        navToggle.textContent = "☰";
+                    }
 
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
+                });
+
+            }
+
+            const yearElement = document.getElementById("currentYear");
+
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
     </script>
-<script src="js/language.js" defer></script>
-</body>
 
+    <!-- LANGUAGE TRANSLATIONS -->
+    <script src="js/language.js" defer></script>
+
+</body>
 </html>
