@@ -203,3 +203,84 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+/* FIX: Mobile navigation layout */
+@media (max-width: 768px) {
+
+    .navbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .brand {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .brand img {
+        max-width: 42px;
+        height: auto;
+    }
+
+    .brand-text {
+        min-width: 0;
+    }
+
+    .brand-name {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .brand-tagline {
+        font-size: 9px;
+        line-height: 1.2;
+    }
+
+    /* Keep menu links hidden until hamburger is tapped */
+    .navMenu {
+        display: none;
+    }
+
+    .navMenu.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 16px;
+        background: #ffffff;
+        z-index: 1000;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .navMenu.show a {
+        display: block;
+        padding: 10px 8px;
+    }
+
+    /* Language selector stays beside hamburger */
+    .language-selector {
+        flex-shrink: 0;
+        width: 88px;
+        max-width: 88px;
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Prevent the old enquiry button from appearing */
+    .nav-cta {
+        display: none !important;
+    }
+}
+```
