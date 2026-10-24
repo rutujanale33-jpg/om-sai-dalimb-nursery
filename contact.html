@@ -14,365 +14,360 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <script src="js/script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         /* CONTACT INTRO */
-.contact-intro {
-max-width: 750px;
-margin: 0 auto;
-text-align: center;
-}
+        .contact-intro {
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-/* CONTACT CARDS: TWO COLUMNS */
-.contact-details-grid {
-display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 16px;
-margin-top: 28px;
-align-items: stretch;
-}
+        /* CONTACT CARDS: TWO COLUMNS */
+        .contact-details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 28px;
+            align-items: stretch;
+        }
 
-.contact-detail-card {
-min-width: 0;
-padding: 18px 14px;
-border: 1px solid #e1e9df;
-border-radius: 14px;
-background: #fff;
-box-shadow: 0 4px 14px rgba(30, 65, 35, 0.05);
-text-align: center;
-overflow-wrap: anywhere;
-}
+        .contact-detail-card {
+            min-width: 0;
+            padding: 18px 14px;
+            border: 1px solid #e1e9df;
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 4px 14px rgba(30, 65, 35, 0.05);
+            text-align: center;
+            overflow-wrap: anywhere;
+        }
 
-.contact-detail-icon {
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 42px;
-height: 42px;
-border-radius: 12px;
-background: #eaf3e8;
-font-size: 1.25rem;
-margin-bottom: 8px;
-}
+        .contact-detail-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: #eaf3e8;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
 
-/* ORIGINAL WHATSAPP BRAND ICON */
-.whatsapp-icon {
-color: #25D366;
-background: #e9f9ef;
-}
+        /* ORIGINAL WHATSAPP BRAND ICON */
+        .whatsapp-icon {
+            color: #25D366;
+            background: #e9f9ef;
+        }
 
-/* EMAIL ICON */
-.email-icon {
-color: #245b35;
-background: #eaf3e8;
-}
+        /* EMAIL ICON */
+        .email-icon {
+            color: #245b35;
+            background: #eaf3e8;
+        }
 
-/* LOCATION ICON */
-.map-icon {
-color: #d93025;
-background: #fcebea;
-}
+        /* LOCATION ICON */
+        .map-icon {
+            color: #d93025;
+            background: #fcebea;
+        }
 
-.contact-detail-card h2 {
-color: #245b35;
-font-size: 1rem;
-line-height: 1.4;
-margin: 0 0 7px;
-}
+        .contact-detail-card h2 {
+            color: #245b35;
+            font-size: 1rem;
+            line-height: 1.4;
+            margin: 0 0 7px;
+        }
 
-.contact-detail-card h3 {
-color: #28452d;
-font-size: 0.8rem;
-margin: 10px 0 3px;
-}
+        .contact-detail-card h3 {
+            color: #28452d;
+            font-size: 0.8rem;
+            margin: 10px 0 3px;
+        }
 
-.contact-detail-card p {
-color: #5b665b;
-font-size: 0.84rem;
-line-height: 1.55;
-margin: 0 0 9px;
-}
+        .contact-detail-card p {
+            color: #5b665b;
+            font-size: 0.84rem;
+            line-height: 1.55;
+            margin: 0 0 9px;
+        }
 
-.contact-detail-card a {
-color: #245b35;
-font-size: 0.82rem;
-font-weight: 600;
-line-height: 1.7;
-text-decoration: none;
-overflow-wrap: anywhere;
-}
+        .contact-detail-card a {
+            color: #245b35;
+            font-size: 0.82rem;
+            font-weight: 600;
+            line-height: 1.7;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
 
-.contact-detail-card a:hover {
-text-decoration: underline;
-}
+        .contact-detail-card a:hover {
+            text-decoration: underline;
+        }
 
-/* PHONE NUMBERS: TWO PER ROW */
-.phone-list {
-display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 8px;
-margin-top: 10px;
-}
+        /* PHONE NUMBERS: TWO PER ROW */
+        .phone-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 10px;
+        }
 
-.phone-item {
-min-width: 0;
-padding: 9px 5px;
-border-radius: 8px;
-background: #f4f8f1;
-}
+        .phone-item {
+            min-width: 0;
+            padding: 9px 5px;
+            border-radius: 8px;
+            background: #f4f8f1;
+        }
 
-.phone-item .contact-name {
-display: block;
-color: #68746b;
-font-size: 0.68rem;
-line-height: 1.4;
-margin-bottom: 3px;
-}
+        .phone-item .contact-name {
+            display: block;
+            color: #68746b;
+            font-size: 0.68rem;
+            line-height: 1.4;
+            margin-bottom: 3px;
+        }
 
-.phone-item a {
-display: block;
-color: #205b38;
-font-size: 0.74rem;
-line-height: 1.5;
-font-weight: 600;
-}
+        .phone-item a {
+            display: block;
+            color: #205b38;
+            font-size: 0.74rem;
+            line-height: 1.5;
+            font-weight: 600;
+        }
 
-/* FORM SECTION */
-.contact-form-section {
-background: #f5f8f2;
-}
+        /* FORM SECTION */
+        .contact-form-section {
+            background: #f5f8f2;
+        }
 
-.contact-form-layout {
-display: grid;
-grid-template-columns: 1fr;
-gap: 25px;
-align-items: start;
-}
+        .contact-form-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            align-items: start;
+        }
 
-.contact-form-info h2 {
-color: #245b35;
-margin-top: 0;
-}
+        .contact-form-info h2 {
+            color: #245b35;
+            margin-top: 0;
+        }
 
-.contact-form-info p {
-color: #5b665b;
-line-height: 1.8;
-}
+        .contact-form-info p {
+            color: #5b665b;
+            line-height: 1.8;
+        }
 
-.contact-form {
-min-width: 0;
-background: #fff;
-padding: 24px 18px;
-border-radius: 16px;
-border: 1px solid #e1e9df;
-box-shadow: 0 5px 20px rgba(30, 65, 35, 0.06);
-}
+        .contact-form {
+            min-width: 0;
+            background: #fff;
+            padding: 24px 18px;
+            border-radius: 16px;
+            border: 1px solid #e1e9df;
+            box-shadow: 0 5px 20px rgba(30, 65, 35, 0.06);
+        }
 
-.form-group {
-margin-bottom: 16px;
-}
+        .form-group {
+            margin-bottom: 16px;
+        }
 
-.form-group label {
-display: block;
-margin-bottom: 7px;
-font-weight: 600;
-color: #28452d;
-}
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: #28452d;
+        }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-display: block;
-width: 100%;
-max-width: 100%;
-padding: 12px;
-border: 1px solid #cbd8c8;
-border-radius: 8px;
-background: #fff;
-color: #243326;
-font: inherit;
-font-size: 16px;
-box-sizing: border-box;
-}
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd8c8;
+            border-radius: 8px;
+            background: #fff;
+            color: #243326;
+            font: inherit;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
 
-.form-group textarea {
-min-height: 110px;
-resize: vertical;
-}
+        .form-group textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-outline: 2px solid #245b35;
-outline-offset: 2px;
-}
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid #245b35;
+            outline-offset: 2px;
+        }
 
-.contact-form .btn {
-width: 100%;
-border: none;
-cursor: pointer;
-font: inherit;
-}
+        .contact-form .btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font: inherit;
+        }
 
-.form-note {
-font-size: 0.85rem;
-color: #5b665b;
-line-height: 1.6;
-margin-top: 14px;
-}
+        .form-note {
+            font-size: 0.85rem;
+            color: #5b665b;
+            line-height: 1.6;
+            margin-top: 14px;
+        }
 
-/* COMPACT LOCATION PANEL */
-.map-panel {
-max-width: 760px;
-margin: 0 auto;
-padding: 22px 16px;
-border-radius: 16px;
-background: #eaf3e8;
-text-align: center;
-}
+        /* COMPACT LOCATION PANEL */
+        .map-panel {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 22px 16px;
+            border-radius: 16px;
+            background: #eaf3e8;
+            text-align: center;
+        }
 
-.map-panel .map-icon {
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 44px;
-height: 44px;
-border-radius: 12px;
-background: #fcebea;
-color: #d93025;
-font-size: 1.35rem;
-}
+        .map-panel .map-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #fcebea;
+            color: #d93025;
+            font-size: 1.35rem;
+        }
 
-.map-panel h2 {
-color: #245b35;
-font-size: 1.3rem;
-margin: 10px 0;
-}
+        .map-panel h2 {
+            color: #245b35;
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
 
-.map-panel p {
-color: #4e5e4e;
-font-size: 0.88rem;
-line-height: 1.65;
-margin-bottom: 12px;
-}
+        .map-panel p {
+            color: #4e5e4e;
+            font-size: 0.88rem;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
 
-/* TABLETS AND DESKTOPS */
-@media (min-width: 600px) {
-.contact-details-grid {
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 18px;
-}
+        /* TABLETS AND DESKTOPS */
+        @media (min-width: 600px) {
+            .contact-details-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
 
-.contact-form {
-    padding: 28px;
-}
+            .contact-form {
+                padding: 28px;
+            }
 
-.phone-item a {
-    font-size: 0.78rem;
-}
+            .phone-item a {
+                font-size: 0.78rem;
+            }
+        }
 
-}
+        @media (min-width: 900px) {
+            .contact-details-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                max-width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-@media (min-width: 900px) {
-.contact-details-grid {
-grid-template-columns: repeat(2, minmax(0, 1fr));
-max-width: 850px;
-margin-left: auto;
-margin-right: auto;
-}
+            .contact-form-layout {
+                grid-template-columns: 0.8fr 1.2fr;
+                gap: 45px;
+            }
 
+            .contact-detail-card {
+                padding: 20px;
+            }
+        }
 
-.contact-form-layout {
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 45px;
-}
+        /* MOBILE */
+        @media (max-width: 480px) {
+            .contact-details-grid {
+                gap: 10px;
+                margin-top: 22px;
+            }
 
-.contact-detail-card {
-    padding: 20px;
-}
+            .contact-detail-card {
+                padding: 12px 8px;
+                border-radius: 12px;
+            }
 
+            .contact-detail-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 1.05rem;
+                margin-bottom: 7px;
+            }
 
-}
+            .contact-detail-card h2 {
+                font-size: 0.88rem;
+            }
 
-/* MOBILE */
-@media (max-width: 480px) {
-.contact-details-grid {
-gap: 10px;
-margin-top: 22px;
-}
+            .contact-detail-card h3 {
+                font-size: 0.72rem;
+            }
 
-.contact-detail-card {
-    padding: 12px 8px;
-    border-radius: 12px;
-}
+            .contact-detail-card p {
+                font-size: 0.75rem;
+                line-height: 1.5;
+            }
 
-.contact-detail-icon {
-    width: 34px;
-    height: 34px;
-    font-size: 1.05rem;
-    margin-bottom: 7px;
-}
+            .contact-detail-card a {
+                font-size: 0.72rem;
+            }
 
-.contact-detail-card h2 {
-    font-size: 0.88rem;
-}
+            .phone-list {
+                gap: 5px;
+            }
 
-.contact-detail-card h3 {
-    font-size: 0.72rem;
-}
+            .phone-item {
+                padding: 8px 3px;
+            }
 
-.contact-detail-card p {
-    font-size: 0.75rem;
-    line-height: 1.5;
-}
+            .phone-item .contact-name {
+                font-size: 0.62rem;
+            }
 
-.contact-detail-card a {
-    font-size: 0.72rem;
-}
+            .phone-item a {
+                font-size: 0.65rem;
+            }
 
-.phone-list {
-    gap: 5px;
-}
+            .contact-form {
+                padding: 18px 12px;
+            }
 
-.phone-item {
-    padding: 8px 3px;
-}
+            .map-panel {
+                padding: 18px 12px;
+            }
 
-.phone-item .contact-name {
-    font-size: 0.62rem;
-}
+            .map-panel h2 {
+                font-size: 1.15rem;
+            }
+        }
 
-.phone-item a {
-    font-size: 0.65rem;
-}
-
-.contact-form {
-    padding: 18px 12px;
-}
-
-.map-panel {
-    padding: 18px 12px;
-}
-
-.map-panel h2 {
-    font-size: 1.15rem;
-}
-
-
-}
-
-/* VERY NARROW SCREENS */
-@media (max-width: 340px) {
-.contact-details-grid {
-grid-template-columns: 1fr;
-}
-}
-
+        /* VERY NARROW SCREENS */
+        @media (max-width: 340px) {
+            .contact-details-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 
 </head>
@@ -385,16 +380,19 @@ grid-template-columns: 1fr;
         <div class="navbar">
 
             <a href="index.html" class="logo">
-    <span class="logo-icon">
-        <img src="images/logo/L1.png"
-             alt="Om Sai Dalimb Nursery logo">
-    </span>
+                <span class="logo-icon">
+                    <img
+                        src="images/logo/L1.png"
+                        alt="Om Sai Dalimb Nursery logo"
+                        width="80"
+                        decoding="async">
+                </span>
 
-    <span class="logo-text">
-        <strong>Om Sai Dalimb Nursery</strong>
-        <small>Growing Quality, Naturally</small>
-    </span>
-</a>
+                <span class="logo-text">
+                    <strong>Om Sai Dalimb Nursery</strong>
+                    <small>Growing Quality, Naturally</small>
+                </span>
+            </a>
 
             <button
                 class="menu-toggle"
@@ -428,7 +426,6 @@ grid-template-columns: 1fr;
 
     </header>
 
-
     <main>
 
         <!-- PAGE BANNER -->
@@ -455,7 +452,6 @@ grid-template-columns: 1fr;
 
         </section>
 
-
         <!-- CONTACT INTRODUCTION -->
         <section class="section-padding">
 
@@ -474,58 +470,52 @@ grid-template-columns: 1fr;
 
             </div>
 
-
             <!-- CONTACT INFORMATION CARDS -->
             <div class="contact-details-grid">
 
-                
                 <!-- PHONE -->
+                <article class="contact-detail-card">
 
-<article class="contact-detail-card">
+                    <span class="contact-detail-icon" aria-hidden="true">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
 
-<span class="contact-detail-icon" aria-hidden="true">
-    <i class="fa-solid fa-phone"></i>
-</span>
+                    <h2>Call Us</h2>
 
-<h2>Call Us</h2>
+                    <p>Speak to us about your requirements.</p>
 
-<p>Speak to us about your requirements.</p>
+                    <div class="phone-list">
 
-<div class="phone-list">
+                        <div class="phone-item">
+                            <span class="contact-name">Maruti Jejurkar</span>
+                            <a href="tel:+919890340692">+91 98903 40692</a>
+                        </div>
 
-    <div class="phone-item">
-        <span class="contact-name">Maruti Jejurkar</span>
-        <a href="tel:+919890340692">+91 98903 40692</a>
-    </div>
+                        <div class="phone-item">
+                            <span class="contact-name">Maruti Jejurkar</span>
+                            <a href="tel:+919604337164">+91 96043 37164</a>
+                        </div>
 
-    <div class="phone-item">
-        <span class="contact-name">Maruti Jejurkar</span>
-        <a href="tel:+919604337164">+91 96043 37164</a>
-    </div>
+                        <div class="phone-item">
+                            <span class="contact-name">Shubham Jejurkar</span>
+                            <a href="tel:+919850716809">+91 98507 16809</a>
+                        </div>
 
-    <div class="phone-item">
-        <span class="contact-name">Shubham Jejurkar</span>
-        <a href="tel:+919850716809">+91 98507 16809</a>
-    </div>
+                        <div class="phone-item">
+                            <span class="contact-name">Sagar Jejurkar</span>
+                            <a href="tel:+918007240943">+91 80072 40943</a>
+                        </div>
 
-    <div class="phone-item">
-        <span class="contact-name">Sagar Jejurkar</span>
-        <a href="tel:+918007240943">+91 80072 40943</a>
-    </div>
+                    </div>
 
-</div>
-```
-
-</article>
-
-
+                </article>
 
                 <!-- WHATSAPP -->
                 <article class="contact-detail-card">
 
-                   <span class="contact-detail-icon whatsapp-icon" aria-hidden="true">
-    <i class="fa-brands fa-whatsapp"></i>
-</span>
+                    <span class="contact-detail-icon whatsapp-icon" aria-hidden="true">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
 
                     <h2>WhatsApp</h2>
 
@@ -542,13 +532,12 @@ grid-template-columns: 1fr;
 
                 </article>
 
-
                 <!-- EMAIL -->
                 <article class="contact-detail-card">
 
                     <span class="contact-detail-icon email-icon" aria-hidden="true">
-    <i class="fa-solid fa-envelope"></i>
-</span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
 
                     <h2>Email Us</h2>
 
@@ -562,13 +551,12 @@ grid-template-columns: 1fr;
 
                 </article>
 
-
                 <!-- LOCATION -->
                 <article class="contact-detail-card">
 
                     <span class="contact-detail-icon map-icon" aria-hidden="true">
-    <i class="fa-solid fa-location-dot"></i>
-</span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
 
                     <h2>Our Location</h2>
 
@@ -589,7 +577,6 @@ grid-template-columns: 1fr;
             </div>
 
         </section>
-
 
         <!-- ENQUIRY FORM -->
         <section class="contact-form-section section-padding">
@@ -621,7 +608,6 @@ grid-template-columns: 1fr;
 
                 </div>
 
-
                 <form class="contact-form" id="enquiryForm">
 
                     <div class="form-group">
@@ -641,7 +627,6 @@ grid-template-columns: 1fr;
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="customerPhone">
@@ -659,7 +644,6 @@ grid-template-columns: 1fr;
                             required>
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -700,7 +684,6 @@ grid-template-columns: 1fr;
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="plantQuantity">
@@ -735,7 +718,6 @@ grid-template-columns: 1fr;
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="customerMessage">
@@ -749,7 +731,6 @@ grid-template-columns: 1fr;
                             maxlength="1000"></textarea>
 
                     </div>
-
 
                     <button type="submit" class="btn btn-primary">
                         Send Enquiry on WhatsApp
@@ -765,7 +746,6 @@ grid-template-columns: 1fr;
             </div>
 
         </section>
-
 
         <!-- LOCATION SECTION -->
         <section class="section-padding">
@@ -799,7 +779,6 @@ grid-template-columns: 1fr;
 
         </section>
 
-
         <!-- FINAL CTA -->
         <section class="contact-cta section-padding">
 
@@ -828,7 +807,6 @@ grid-template-columns: 1fr;
 
     </main>
 
-
     <!-- FOOTER -->
     <footer class="site-footer">
 
@@ -836,16 +814,15 @@ grid-template-columns: 1fr;
 
             <div class="footer-brand">
 
-                <h2><span class="logo-icon">
-    <img
-        src="C:\Users\Rutuja\OneDrive\Desktop\OmSaiDalimbNursery\images\logo\L1.png"
-        alt="Om Sai Dalimb Nursery logo"
-        width="80"
-        loading="eager"
-        onerror="this.onerror=null; this.src='images/hero/h2.jpeg';"
-    >
-</span>
-
+                <h2>
+                    <span class="logo-icon">
+                        <img
+                            src="images/logo/L1.png"
+                            alt="Om Sai Dalimb Nursery logo"
+                            width="80"
+                            decoding="async">
+                    </span>
+                </h2>
 
                 <p>
                     Your destination for pomegranate plant enquiries
@@ -853,7 +830,6 @@ grid-template-columns: 1fr;
                 </p>
 
             </div>
-
 
             <div class="footer-links">
 
@@ -866,7 +842,6 @@ grid-template-columns: 1fr;
                 <a href="contact.html">Contact Us</a>
 
             </div>
-
 
             <div class="footer-contact">
 
@@ -890,7 +865,6 @@ grid-template-columns: 1fr;
 
         </div>
 
-
         <div class="footer-bottom">
 
             <p>
@@ -902,7 +876,6 @@ grid-template-columns: 1fr;
 
     </footer>
 
-
     <!-- FLOATING WHATSAPP BUTTON -->
     <a
         href="https://wa.me/918007240943"
@@ -912,7 +885,6 @@ grid-template-columns: 1fr;
         aria-label="Contact Om Sai Dalimb Nursery on WhatsApp">
         ☎
     </a>
-
 
     <!-- ENQUIRY FORM SCRIPT -->
     <script>

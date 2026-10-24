@@ -30,7 +30,6 @@
         </div>
     </div>
 
-
     <!-- NAVIGATION -->
     <header class="navbar">
         <div class="container navbar-inner">
@@ -38,6 +37,7 @@
             <a href="index.html" class="brand">
                 <img src="images/logo/logo1.png"
                     alt="Om Sai Dalimb Nursery logo"
+                    decoding="async"
                     onerror="this.style.display='none'">
 
                 <span class="brand-text">
@@ -73,7 +73,6 @@
         </div>
     </header>
 
-
     <main>
 
         <!-- PAGE HERO -->
@@ -101,7 +100,6 @@
 
         </section>
 
-
         <!-- INTRODUCTION -->
         <section class="section">
 
@@ -121,22 +119,22 @@
 
                 </div>
 
-
                 <!-- VARIETY CARDS -->
                 <div class="variety-grid">
 
                     <!-- BHAGWA -->
-                    <article class="variety-card">
+                    <article class="variety-card" id="bhagwa">
 
                         <div class="variety-image image-placeholder">
 
-                            <!-- Add the Bhagwa plant image here later -->
-
                             <div class="placeholder-content">
-                                 <img src="C:\Users\Rutuja\OneDrive\Desktop\OmSaiDalimbNursery\images\plants\p6.jpeg"
-                                alt="Shard King pomegranate variety"
-                                loading="lazy"
-                                onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
+
+                                <img src="images/plants/p6.jpeg"
+                                    alt="Bhagwa pomegranate plants"
+                                    loading="lazy"
+                                    decoding="async"
+                                    onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
+
                             </div>
 
                         </div>
@@ -164,19 +162,19 @@
 
                     </article>
 
-
                     <!-- SUPER BHAGWA -->
-                    <article class="variety-card">
+                    <article class="variety-card" id="super-bhagwa">
 
                         <div class="variety-image image-placeholder">
 
-                            <!-- Add the Super Bhagwa plant image here later -->
-
                             <div class="placeholder-content">
-                               <img src="C:\Users\Rutuja\OneDrive\Desktop\OmSaiDalimbNursery\images\plants\p14.jpeg"
-                                alt="Shard King pomegranate variety"
-                                loading="lazy"
-                                onerror="this.onerror=null;this.src='images/hero/h1.jpeg';">
+
+                                <img src="images/plants/p14.jpeg"
+                                    alt="Super Bhagwa pomegranate plants"
+                                    loading="lazy"
+                                    decoding="async"
+                                    onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
+
                             </div>
 
                         </div>
@@ -204,19 +202,19 @@
 
                     </article>
 
-
                     <!-- SHARD KING -->
-                    <article class="variety-card">
+                    <article class="variety-card" id="shard-king">
 
                         <div class="variety-image image-placeholder">
 
-                            <!-- Add the Shard King plant image here later -->
-
                             <div class="placeholder-content">
-                                <img src="C:\Users\Rutuja\OneDrive\Desktop\OmSaiDalimbNursery\images\plants\p13.jpeg"
-                                alt="Shard King pomegranate variety"
-                                loading="lazy"
-                                onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
+
+                                <img src="images/plants/p13.jpeg"
+                                    alt="Shard King pomegranate plants"
+                                    loading="lazy"
+                                    decoding="async"
+                                    onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
+
                             </div>
 
                         </div>
@@ -249,7 +247,6 @@
             </div>
 
         </section>
-
 
         <!-- BUYING INFORMATION -->
         <section class="section section-white">
@@ -305,7 +302,6 @@
 
                 </div>
 
-
                 <div class="enquiry-panel">
 
                     <span class="enquiry-panel-icon">🌱</span>
@@ -326,7 +322,6 @@
             </div>
 
         </section>
-
 
         <!-- FINAL CTA -->
         <section class="section">
@@ -373,7 +368,6 @@
 
     </main>
 
-
     <!-- FOOTER -->
     <footer class="footer">
 
@@ -399,7 +393,6 @@
 
                 </div>
 
-
                 <div>
 
                     <h3>Quick Links</h3>
@@ -414,7 +407,6 @@
 
                 </div>
 
-
                 <div>
 
                     <h3>Plant Varieties</h3>
@@ -427,12 +419,12 @@
 
                 </div>
 
-
                 <div>
 
                     <h3>Contact</h3>
 
                     <ul class="footer-links">
+
                         <li>
                             <a href="tel:+918007240943">
                                 +91 80072 40943
@@ -448,12 +440,12 @@
                         <li>
                             <span>Astagaon Phata, near Shirdi, Maharashtra 423107</span>
                         </li>
+
                     </ul>
 
                 </div>
 
             </div>
-
 
             <div class="footer-bottom">
 
@@ -468,7 +460,6 @@
 
     </footer>
 
-
     <!-- FLOATING WHATSAPP -->
     <a href="https://wa.me/918007240943"
         class="whatsapp-float"
@@ -477,7 +468,6 @@
         aria-label="Contact us on WhatsApp">
         ☎
     </a>
-
 
     <!-- JAVASCRIPT -->
     <script>
@@ -491,6 +481,7 @@
                 const isOpen = navMenu.classList.toggle("show");
 
                 navToggle.setAttribute("aria-expanded", String(isOpen));
+
                 navToggle.setAttribute(
                     "aria-label",
                     isOpen ? "Close navigation menu" : "Open navigation menu"
@@ -520,5 +511,4 @@
     </script>
 
 </body>
-
 </html>
