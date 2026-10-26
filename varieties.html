@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +27,9 @@
     <!-- TOP BAR -->
     <div class="topbar">
         <div class="container topbar-inner">
-            <p>📍 Astagaon Phata, near Shirdi, Maharashtra 423107</p>
+            <p data-i18n="nurseryLocation">
+                📍 Astagaon Phata, near Shirdi, Maharashtra 423107
+            </p>
         </div>
     </div>
 
@@ -42,26 +45,43 @@
 
                 <span class="brand-text">
                     <span class="brand-name">OM SAI DALIMB NURSERY</span>
-                    <span class="brand-tagline">YOUR POMEGRANATE PLANT PARTNER</span>
+                    <span class="brand-tagline" data-i18n="brandTagline">
+                        YOUR POMEGRANATE PLANT PARTNER
+                    </span>
                 </span>
             </a>
 
             <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-                <select class="language-selector"
-     data-language-selector
-     aria-label="Choose website language"> <option value="en">English</option> <option value="mr">मराठी</option> <option value="hi">हिन्दी</option> </select>
 
-     <a href="index.html">Home</a>
-                <a href="varieties.html" class="active">Varieties</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
+                <select class="language-selector"
+                    data-language-selector
+                    aria-label="Choose website language">
+
+                    <option value="en">English</option>
+                    <option value="mr">मराठी</option>
+                    <option value="hi">हिन्दी</option>
+
+                </select>
+
+                <a href="index.html" data-i18n="navHome">Home</a>
+
+                <a href="varieties.html"
+                    class="active"
+                    data-i18n="navVarieties">Varieties</a>
+
+                <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+
+                <a href="about.html" data-i18n="navAbout">About Us</a>
+
+                <a href="contact.html" data-i18n="navContact">Contact</a>
+
             </nav>
 
             <a href="https://wa.me/918007240943"
                 class="btn btn-primary nav-cta"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                data-i18n="navEnquire">
                 Enquire Now
             </a>
 
@@ -85,16 +105,20 @@
             <div class="container">
 
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" data-i18n="navHome">Home</a>
                     <span>/</span>
-                    <span>Varieties</span>
+                    <span data-i18n="navVarieties">Varieties</span>
                 </nav>
 
-                <span class="eyebrow">OUR PLANT COLLECTION</span>
+                <span class="eyebrow" data-i18n="varietiesHeroEyebrow">
+                    OUR PLANT COLLECTION
+                </span>
 
-                <h1>Pomegranate Plant Varieties</h1>
+                <h1 data-i18n="varietiesHeroTitle">
+                    Pomegranate Plant Varieties
+                </h1>
 
-                <p>
+                <p data-i18n="varietiesHeroDescription">
                     Explore the pomegranate varieties available for enquiry
                     at Om Sai Dalimb Nursery. Contact us to discuss your
                     cultivation plans, required quantities and current availability.
@@ -111,11 +135,15 @@
 
                 <div class="section-heading">
 
-                    <span class="eyebrow">FIND YOUR VARIETY</span>
+                    <span class="eyebrow" data-i18n="varietiesIntroEyebrow">
+                        FIND YOUR VARIETY
+                    </span>
 
-                    <h2>Explore Our Pomegranate Plants</h2>
+                    <h2 data-i18n="varietiesIntroTitle">
+                        Explore Our Pomegranate Plants
+                    </h2>
 
-                    <p>
+                    <p data-i18n="varietiesIntroDescription">
                         Every orchard has its own requirements. Learn about
                         the varieties listed below and contact our nursery
                         for further information before making your selection.
@@ -135,6 +163,7 @@
 
                                 <img src="images/plants/p6.jpeg"
                                     alt="Bhagwa pomegranate plants"
+                                    data-i18n-alt="bhagwaImageAlt"
                                     loading="lazy"
                                     decoding="async"
                                     onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
@@ -145,11 +174,13 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 01</span>
+                            <span class="eyebrow" data-i18n="bhagwaLabel">
+                                VARIETY 01
+                            </span>
 
-                            <h3>Bhagwa</h3>
+                            <h3 data-i18n="bhagwaTitle">Bhagwa</h3>
 
-                            <p>
+                            <p data-i18n="bhagwaDescription">
                                 Bhagwa is a recognised pomegranate variety.
                                 Contact us to enquire about Bhagwa plants
                                 and their current availability at our nursery.
@@ -158,7 +189,8 @@
                             <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20Bhagwa%20pomegranate%20plants."
                                 class="btn btn-primary"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="bhagwaEnquire">
                                 Enquire About Bhagwa →
                             </a>
 
@@ -175,6 +207,7 @@
 
                                 <img src="images/plants/p14.jpeg"
                                     alt="Super Bhagwa pomegranate plants"
+                                    data-i18n-alt="superBhagwaImageAlt"
                                     loading="lazy"
                                     decoding="async"
                                     onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
@@ -185,11 +218,15 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 02</span>
+                            <span class="eyebrow" data-i18n="superBhagwaLabel">
+                                VARIETY 02
+                            </span>
 
-                            <h3>Super Bhagwa</h3>
+                            <h3 data-i18n="superBhagwaTitle">
+                                Super Bhagwa
+                            </h3>
 
-                            <p>
+                            <p data-i18n="superBhagwaDescription">
                                 Interested in Super Bhagwa pomegranate plants?
                                 Contact the nursery to discuss availability,
                                 pricing and your planting requirements.
@@ -198,7 +235,8 @@
                             <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20Super%20Bhagwa%20pomegranate%20plants."
                                 class="btn btn-primary"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="superBhagwaEnquire">
                                 Enquire About Super Bhagwa →
                             </a>
 
@@ -215,6 +253,7 @@
 
                                 <img src="images/plants/p13.jpeg"
                                     alt="Shard King pomegranate plants"
+                                    data-i18n-alt="shardKingImageAlt"
                                     loading="lazy"
                                     decoding="async"
                                     onerror="this.onerror=null;this.src='images/hero/hero1.jpeg';">
@@ -225,11 +264,13 @@
 
                         <div class="variety-content">
 
-                            <span class="eyebrow">VARIETY 03</span>
+                            <span class="eyebrow" data-i18n="shardKingLabel">
+                                VARIETY 03
+                            </span>
 
-                            <h3>Shard King</h3>
+                            <h3 data-i18n="shardKingTitle">Shard King</h3>
 
-                            <p>
+                            <p data-i18n="shardKingDescription">
                                 Enquire about Shard King pomegranate plants
                                 to learn more about availability and pricing
                                 for your orchard requirements.
@@ -238,7 +279,8 @@
                             <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20to%20enquire%20about%20Shard%20King%20pomegranate%20plants."
                                 class="btn btn-primary"
                                 target="_blank"
-                                rel="noopener noreferrer">
+                                rel="noopener noreferrer"
+                                data-i18n="shardKingEnquire">
                                 Enquire About Shard King →
                             </a>
 
@@ -259,11 +301,15 @@
 
                 <div class="about-content">
 
-                    <span class="eyebrow">PLANNING YOUR ORCHARD</span>
+                    <span class="eyebrow" data-i18n="orchardEyebrow">
+                        PLANNING YOUR ORCHARD
+                    </span>
 
-                    <h2>Let's Discuss Your Requirements</h2>
+                    <h2 data-i18n="orchardTitle">
+                        Let's Discuss Your Requirements
+                    </h2>
 
-                    <p>
+                    <p data-i18n="orchardDescription">
                         Choosing plants for an orchard requires consideration
                         of your location, growing conditions and cultivation plans.
                         Contact the nursery to discuss the options available to you.
@@ -274,24 +320,39 @@
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Variety Enquiries</strong>
-                                <p>Ask about Bhagwa, Super Bhagwa and Shard King.</p>
+                                <strong data-i18n="varietyEnquiriesTitle">
+                                    Variety Enquiries
+                                </strong>
+
+                                <p data-i18n="varietyEnquiriesDescription">
+                                    Ask about Bhagwa, Super Bhagwa and Shard King.
+                                </p>
                             </div>
                         </li>
 
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Quantity Requirements</strong>
-                                <p>Tell us how many plants you need.</p>
+                                <strong data-i18n="quantityRequirementsTitle">
+                                    Quantity Requirements
+                                </strong>
+
+                                <p data-i18n="quantityRequirementsDescription">
+                                    Tell us how many plants you need.
+                                </p>
                             </div>
                         </li>
 
                         <li>
                             <span>✓</span>
                             <div>
-                                <strong>Pricing Information</strong>
-                                <p>Contact us for current rates and availability.</p>
+                                <strong data-i18n="pricingInformationTitle">
+                                    Pricing Information
+                                </strong>
+
+                                <p data-i18n="pricingInformationDescription">
+                                    Contact us for current rates and availability.
+                                </p>
                             </div>
                         </li>
 
@@ -300,7 +361,8 @@
                     <a href="https://wa.me/918007240943?text=Hello%20Om%20Sai%20Dalimb%20Nursery%2C%20I%20would%20like%20information%20about%20pomegranate%20plants."
                         class="btn btn-whatsapp"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        data-i18n="discussWhatsApp">
                         💬 Discuss on WhatsApp
                     </a>
 
@@ -310,14 +372,18 @@
 
                     <span class="enquiry-panel-icon">🌱</span>
 
-                    <h3>Looking for Pomegranate Plants?</h3>
+                    <h3 data-i18n="lookingPlantsTitle">
+                        Looking for Pomegranate Plants?
+                    </h3>
 
-                    <p>
+                    <p data-i18n="lookingPlantsDescription">
                         Get in touch with Om Sai Dalimb Nursery to discuss
                         your plant requirements and wholesale enquiries.
                     </p>
 
-                    <a href="tel:+918007240943" class="btn btn-white">
+                    <a href="tel:+918007240943"
+                        class="btn btn-white"
+                        data-i18n="callNursery">
                         Call +91 80072 40943
                     </a>
 
@@ -336,13 +402,16 @@
 
                     <div>
 
-                        <span class="eyebrow" style="color: #e9c5a2;">
+                        <span class="eyebrow" style="color: #e9c5a2;"
+                            data-i18n="varietiesCtaEyebrow">
                             OM SAI DALIMB NURSERY
                         </span>
 
-                        <h2>Have Questions About Our Plants?</h2>
+                        <h2 data-i18n="varietiesCtaTitle">
+                            Have Questions About Our Plants?
+                        </h2>
 
-                        <p>
+                        <p data-i18n="varietiesCtaDescription">
                             Contact us directly for variety details,
                             plant availability and wholesale enquiries.
                         </p>
@@ -354,11 +423,14 @@
                         <a href="https://wa.me/918007240943"
                             class="btn btn-white"
                             target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                            data-i18n="whatsappUs">
                             WhatsApp Us
                         </a>
 
-                        <a href="contact.html" class="btn btn-outline">
+                        <a href="contact.html"
+                            class="btn btn-outline"
+                            data-i18n="contactDetails">
                             Contact Details
                         </a>
 
@@ -384,13 +456,19 @@
                     <a href="index.html" class="brand">
 
                         <span class="brand-text">
-                            <span class="brand-name">OM SAI DALIMB NURSERY</span>
-                            <span class="brand-tagline">POMEGRANATE PLANTS</span>
+                            <span class="brand-name">
+                                OM SAI DALIMB NURSERY
+                            </span>
+
+                            <span class="brand-tagline"
+                                data-i18n="footerBrandTagline">
+                                POMEGRANATE PLANTS
+                            </span>
                         </span>
 
                     </a>
 
-                    <p class="mt-2">
+                    <p class="mt-2" data-i18n="footerDescription">
                         Pomegranate plant enquiries from Astagaon Phata,
                         near Shirdi, Maharashtra.
                     </p>
@@ -399,33 +477,33 @@
 
                 <div>
 
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footerQuickLinks">Quick Links</h3>
 
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="varieties.html">Varieties</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                        <li><a href="varieties.html" data-i18n="navVarieties">Varieties</a></li>
+                        <li><a href="gallery.html" data-i18n="navGallery">Gallery</a></li>
+                        <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
                     </ul>
 
                 </div>
 
                 <div>
 
-                    <h3>Plant Varieties</h3>
+                    <h3 data-i18n="footerPlantVarieties">Plant Varieties</h3>
 
                     <ul class="footer-links">
-                        <li><a href="#bhagwa">Bhagwa</a></li>
-                        <li><a href="#super-bhagwa">Super Bhagwa</a></li>
-                        <li><a href="#shard-king">Shard King</a></li>
+                        <li><a href="#bhagwa" data-i18n="bhagwaTitle">Bhagwa</a></li>
+                        <li><a href="#super-bhagwa" data-i18n="superBhagwaTitle">Super Bhagwa</a></li>
+                        <li><a href="#shard-king" data-i18n="shardKingTitle">Shard King</a></li>
                     </ul>
 
                 </div>
 
                 <div>
 
-                    <h3>Contact</h3>
+                    <h3 data-i18n="footerContact">Contact</h3>
 
                     <ul class="footer-links">
 
@@ -436,13 +514,16 @@
                         </li>
 
                         <li>
-                            <a href="mailto:jejurkarsagar766@gmail.com">
+                            <a href="mailto:jejurkarsagar766@gmail.com"
+                                data-i18n="footerEmail">
                                 Email Us
                             </a>
                         </li>
 
                         <li>
-                            <span>Astagaon Phata, near Shirdi, Maharashtra 423107</span>
+                            <span data-i18n="nurseryLocationFooter">
+                                Astagaon Phata, near Shirdi, Maharashtra 423107
+                            </span>
                         </li>
 
                     </ul>
@@ -455,7 +536,9 @@
 
                 <p>
                     &copy; <span id="currentYear"></span>
-                    Om Sai Dalimb Nursery. All rights reserved.
+                    <span data-i18n="copyrightText">
+                        Om Sai Dalimb Nursery. All rights reserved.
+                    </span>
                 </p>
 
             </div>
@@ -469,11 +552,12 @@
         class="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Contact us on WhatsApp">
+        aria-label="Contact us on WhatsApp"
+        data-i18n-aria-label="whatsappAriaLabel">
         ☎
     </a>
 
-    <!-- JAVASCRIPT -->
+    <!-- NAVIGATION AND YEAR SCRIPT -->
     <script>
         const navToggle = document.getElementById("navToggle");
         const navMenu = document.getElementById("navMenu");
@@ -510,9 +594,15 @@
 
         }
 
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
+        const currentYear = document.getElementById("currentYear");
+
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
     </script>
-<script src="js/language.js" defer></script>
+
+    <!-- LANGUAGE SCRIPT -->
+    <script src="js/language.js" defer></script>
+
 </body>
 </html>

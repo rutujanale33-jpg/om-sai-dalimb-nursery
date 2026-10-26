@@ -2956,3 +2956,486 @@ color: #16813b;
         display: none !important;
     }
 }
+
+/* =========================================================
+   FINAL RESPONSIVE OVERRIDES
+   Keeps legacy class names working while improving mobile layout.
+   ========================================================= */
+
+:root {
+    --page-gutter: clamp(16px, 4vw, 28px);
+}
+
+.container,
+.container-fluid,
+.navbar-inner,
+.nav-container,
+.footer-container {
+    min-width: 0;
+}
+
+.container {
+    width: min(calc(100% - (var(--page-gutter) * 2)), var(--container));
+    margin-inline: auto;
+}
+
+section,
+main,
+header,
+footer {
+    min-width: 0;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 5vw, 3.25rem);
+    line-height: 1.18;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2.25rem);
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+    line-height: 1.35;
+}
+
+p,
+li {
+    overflow-wrap: anywhere;
+}
+
+button,
+.btn,
+a.btn {
+    max-width: 100%;
+}
+
+/* Images stay inside their cards and crop consistently where a fixed ratio exists. */
+.gallery-grid img,
+.gallery-item img,
+.gallery-card img,
+.variety-card img,
+.plant-card img {
+    max-width: 100%;
+}
+
+.gallery-grid,
+.gallery,
+.gallery-container {
+    min-width: 0;
+}
+
+/* Navigation compatibility: these names appear in different revisions of the site. */
+.navbar,
+.navbar-inner,
+.nav-container,
+.navigation,
+.nav-wrapper {
+    min-width: 0;
+}
+
+.navbar-inner,
+.nav-container {
+    flex-wrap: nowrap;
+}
+
+.nav-menu,
+.navMenu,
+.navigation-menu,
+.nav-links {
+    min-width: 0;
+}
+
+.language-selector {
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Tablet and smaller laptop screens */
+@media (max-width: 900px) {
+    .container {
+        width: min(calc(100% - 32px), var(--container));
+    }
+
+    .hero,
+    .hero-section,
+    .about-section,
+    .contact-section {
+        min-width: 0;
+    }
+
+    .hero-content,
+    .about-content,
+    .contact-content {
+        min-width: 0;
+    }
+
+    .variety-grid,
+    .varieties-grid,
+    .gallery-grid,
+    .gallery,
+    .features-grid,
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nav-cta {
+        white-space: normal;
+    }
+}
+
+/* Mobile-first layout */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 76px;
+    }
+
+    body {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    section {
+        padding-block: 36px;
+    }
+
+    .section-title,
+    .section-heading {
+        margin-bottom: 20px;
+    }
+
+    .section-title p,
+    .section-heading p {
+        max-width: 42rem;
+        margin-inline: auto;
+    }
+
+    .hero,
+    .hero-section {
+        min-height: 0;
+    }
+
+    .hero-content,
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1,
+    .hero-section h1 {
+        font-size: clamp(1.7rem, 7vw, 2.35rem);
+        line-height: 1.2;
+    }
+
+    .hero p,
+    .hero-section p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons,
+    .hero-actions,
+    .cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn,
+    .hero-actions .btn,
+    .cta-buttons .btn {
+        flex: 1 1 145px;
+        text-align: center;
+    }
+
+    .trust-grid,
+    .trust-items,
+    .variety-grid,
+    .varieties-grid,
+    .gallery-grid,
+    .gallery,
+    .features-grid,
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .variety-card,
+    .plant-card,
+    .gallery-card,
+    .feature-card {
+        min-width: 0;
+    }
+
+    .variety-card img,
+    .plant-card img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .gallery-grid img,
+    .gallery-item img,
+    .gallery-card img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .variety-card h3,
+    .plant-card h3 {
+        font-size: 14px;
+    }
+
+    .variety-card p,
+    .plant-card p,
+    .gallery-card p {
+        font-size: 12px;
+    }
+
+    .about-content,
+    .contact-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .about-image img,
+    .about-img,
+    .contact-image img {
+        max-height: 320px;
+        object-fit: cover;
+    }
+
+    .contact-form,
+    .contact-info,
+    .faq-item {
+        min-width: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select,
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+
+    .faq-question {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .site-footer,
+    .footer {
+        overflow-wrap: anywhere;
+    }
+
+    .site-footer .footer-grid,
+    .footer .footer-grid {
+        gap: 18px 12px;
+    }
+
+    .language-selector {
+        width: 88px;
+        min-height: 40px;
+        padding: 7px 4px;
+        font-size: 12px;
+    }
+
+    /* Shared mobile menu rules for common class-name variants. */
+    .navbar,
+    .navbar-inner,
+    .nav-container,
+    .navigation,
+    .nav-wrapper {
+        position: relative;
+    }
+
+    .nav-toggle,
+    .menu-toggle,
+    .hamburger {
+        flex: 0 0 auto;
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    .nav-menu,
+    .navMenu,
+    .navigation-menu,
+    .nav-links {
+        display: none;
+    }
+
+    .nav-menu.show,
+    .navMenu.show,
+    .navigation-menu.show,
+    .nav-links.show,
+    .nav-menu.active,
+    .navMenu.active,
+    .navigation-menu.active,
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: 75vh;
+        overflow-y: auto;
+        padding: 12px 16px;
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
+        z-index: 1000;
+    }
+
+    .nav-menu a,
+    .navMenu a,
+    .navigation-menu a,
+    .nav-links a {
+        padding: 10px 8px;
+        line-height: 1.4;
+    }
+
+    .nav-cta {
+        display: none !important;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .variety-grid,
+    .varieties-grid,
+    .gallery-grid,
+    .gallery,
+    .features-grid,
+    .trust-grid,
+    .trust-items,
+    .footer-grid,
+    .site-footer .footer-grid {
+        gap: 10px;
+    }
+
+    .brand-name {
+        font-size: 11px;
+    }
+
+    .brand-tagline {
+        font-size: 8px;
+    }
+
+    .language-selector {
+        width: 80px;
+        max-width: 80px;
+        font-size: 11px;
+    }
+
+    .btn,
+    button.btn {
+        padding: 10px 14px;
+    }
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================================
+   HAMBURGER MENU ON ALL SCREEN SIZES
+========================================= */
+
+/* Keep the menu button visible on laptops and mobiles */
+.nav-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Hide navigation links until the menu is opened */
+.navMenu,
+.nav-menu {
+    display: none;
+}
+
+/* Display links when the hamburger button is clicked */
+.navMenu.show,
+.nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Keep the header elements aligned */
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Ensure the language selector remains visible */
+.language-selector {
+    flex-shrink: 0;
+}
+
+/* Position the dropdown menu below the header */
+.navMenu.show,
+.nav-menu.show {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 220px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Allow the menu to appear outside the header */
+.site-header,
+.navbar {
+    position: relative;
+}
+
+/* Keep menu links easy to tap or click */
+.navMenu.show a,
+.nav-menu.show a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+/* Ensure the dropdown fits smaller screens */
+@media (max-width: 480px) {
+    .navMenu.show,
+    .nav-menu.show {
+        left: 0;
+        right: 0;
+        min-width: 0;
+    }
+}

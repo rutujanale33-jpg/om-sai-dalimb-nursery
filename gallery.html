@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Gallery-specific responsive styling -->
     <style>
         .gallery-intro .section-heading {
             max-width: 760px;
@@ -188,78 +187,108 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="site-header">
-        <nav class="navbar">
-            <div class="container navbar-inner">
+<!-- TOP LOCATION BAR -->
+<div class="topbar">
+    <div class="container topbar-inner">
+        <p data-i18n="location">
+            📍 Astagaon Phata, near Shirdi, Maharashtra 423107
+        </p>
+    </div>
+</div>
 
-                <a href="index.html" class="brand">
-                    <img src="images/logo/L1.png"
-                        alt="Om Sai Dalimb Nursery logo"
-                        onerror="this.style.display='none'"
-                        decoding="async">
+<!-- NAVIGATION -->
+<header class="navbar">
+    <div class="container navbar-inner">
 
-                    <span class="brand-text">
-                        <strong>Om Sai Dalimb Nursery</strong>
-                        <small>Quality Pomegranate Plants</small>
-                    </span>
-                </a>
+        <a href="index.html"
+           class="brand"
+           aria-label="Om Sai Dalimb Nursery homepage">
 
-                <button class="nav-toggle"
-                    id="navToggle"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false">
-                    ☰
-                </button>
+            <img src="images/logo/L1.png"
+                 alt="Om Sai Dalimb Nursery logo"
+                 onerror="this.style.display='none'"
+                 decoding="async">
 
-                <div class="nav-menu" id="navMenu">
-                    <select class="language-selector"
-     data-language-selector
-     aria-label="Choose website language"> <option value="en">English</option> <option value="mr">मराठी</option> <option value="hi">हिन्दी</option> </select>
+            <span class="brand-text">
+                <span class="brand-name">OM SAI DALIMB NURSERY</span>
+                <span class="brand-tagline" data-i18n="brandTagline">
+                    YOUR POMEGRANATE PLANT PARTNER
+                </span>
+            </span>
+        </a>
 
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="varieties.html">Varieties</a>
-                    <a href="gallery.html" class="active">Gallery</a>
+        <nav class="navMenu" id="navMenu" aria-label="Main navigation">
 
-                    <a href="contact.html">Contact</a>
+            <a href="index.html" data-i18n="home">Home</a>
 
-                    <a href="https://wa.me/918007240943"
-                        class="nav-cta"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Enquire Now
-                    </a>
-                </div>
+            <a href="about.html" data-i18n="about">About Us</a>
 
-            </div>
+            <a href="varieties.html" data-i18n="varieties">Varieties</a>
+
+            <a href="gallery.html"
+               class="active"
+               aria-current="page"
+               data-i18n="gallery">Gallery</a>
+
+            <a href="contact.html" data-i18n="contact">Contact</a>
+
         </nav>
-    </header>
+
+        <select class="language-selector"
+                data-language-selector
+                aria-label="Choose language">
+
+            <option value="en">English</option>
+            <option value="mr">मराठी</option>
+            <option value="hi">हिंदी</option>
+
+        </select>
+
+        <button class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="navMenu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+    </div>
+</header>
+
 
 
     <!-- PAGE HERO -->
     <section class="page-hero gallery-hero">
         <div class="container">
 
-            <span class="eyebrow">A Glimpse of Our Nursery</span>
+            <span class="eyebrow" data-i18n="galleryEyebrow">
+                A Glimpse of Our Nursery
+            </span>
 
-            <h1>Our Nursery <span>Gallery</span></h1>
+            <h1>
+                <span data-i18n="ourNursery">Our Nursery</span>
+                <span data-i18n="gallery">Gallery</span>
+            </h1>
 
-            <p>
+            <p data-i18n="galleryHeroDescription">
                 Explore our pomegranate plants, nursery photographs,
                 and orchard surroundings at Om Sai Dalimb Nursery.
             </p>
 
             <div class="hero-actions">
 
-                <a href="#gallery-grid" class="btn btn-primary">
+                <a href="#gallery-grid"
+                    class="btn btn-primary"
+                    data-i18n="exploreGallery">
                     Explore Gallery
                 </a>
 
                 <a href="https://wa.me/918007240943"
                     class="btn btn-outline"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    data-i18n="contactUs">
                     Contact Us
                 </a>
 
@@ -275,11 +304,16 @@
 
             <div class="section-heading">
 
-                <span class="eyebrow">From Our Nursery</span>
+                <span class="eyebrow" data-i18n="fromOurNursery">
+                    From Our Nursery
+                </span>
 
-                <h2>Explore Our <span>Collection</span></h2>
+                <h2>
+                    <span data-i18n="exploreOur">Explore Our</span>
+                    <span data-i18n="collection">Collection</span>
+                </h2>
 
-                <p>
+                <p data-i18n="galleryIntroduction">
                     Take a closer look at our pomegranate plants,
                     nursery facilities, and orchard photographs.
                     Browse our photo collection and nursery videos below.
@@ -296,8 +330,14 @@
         <div class="container">
 
             <div class="gallery-section-heading">
-                <h2>Our <span>Plants</span></h2>
-                <p>Photographs from our pomegranate plant collection.</p>
+                <h2>
+                    <span data-i18n="our">Our</span>
+                    <span data-i18n="plants">Plants</span>
+                </h2>
+
+                <p data-i18n="plantCollectionDescription">
+                    Photographs from our pomegranate plant collection.
+                </p>
             </div>
 
             <div class="nursery-gallery-grid">
@@ -313,8 +353,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">01</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>From our plant collection.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="fromPlantCollection">From our plant collection.</p>
                         </div>
                     </div>
                 </article>
@@ -328,8 +368,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">02</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Explore our nursery plants.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="exploreNurseryPlants">Explore our nursery plants.</p>
                         </div>
                     </div>
                 </article>
@@ -343,8 +383,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">03</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Plants available at our nursery.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="plantsAvailable">Plants available at our nursery.</p>
                         </div>
                     </div>
                 </article>
@@ -358,8 +398,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">04</span>
                         <div>
-                            <h3>Plant Details</h3>
-                            <p>A closer look at our plants.</p>
+                            <h3 data-i18n="plantDetails">Plant Details</h3>
+                            <p data-i18n="closerLookPlants">A closer look at our plants.</p>
                         </div>
                     </div>
                 </article>
@@ -373,8 +413,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">05</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>From our nursery collection.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="fromNurseryCollection">From our nursery collection.</p>
                         </div>
                     </div>
                 </article>
@@ -388,8 +428,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">06</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Contact us for variety details.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="contactVarietyDetails">Contact us for variety details.</p>
                         </div>
                     </div>
                 </article>
@@ -403,8 +443,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">07</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>Explore our plant collection.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="explorePlantCollection">Explore our plant collection.</p>
                         </div>
                     </div>
                 </article>
@@ -418,8 +458,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">08</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Plants from our nursery.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="plantsFromNursery">Plants from our nursery.</p>
                         </div>
                     </div>
                 </article>
@@ -433,8 +473,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">09</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>Contact us for availability.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="contactAvailability">Contact us for availability.</p>
                         </div>
                     </div>
                 </article>
@@ -448,8 +488,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">10</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Explore our available plants.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="exploreAvailablePlants">Explore our available plants.</p>
                         </div>
                     </div>
                 </article>
@@ -463,8 +503,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">11</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>From our nursery collection.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="fromNurseryCollection">From our nursery collection.</p>
                         </div>
                     </div>
                 </article>
@@ -478,8 +518,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">12</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>See our nursery photographs.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="seeNurseryPhotographs">See our nursery photographs.</p>
                         </div>
                     </div>
                 </article>
@@ -493,8 +533,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">13</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>Plants at Om Sai Dalimb Nursery.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="plantsAtNursery">Plants at Om Sai Dalimb Nursery.</p>
                         </div>
                     </div>
                 </article>
@@ -508,8 +548,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">14</span>
                         <div>
-                            <h3>Plant Collection</h3>
-                            <p>Contact us for further information.</p>
+                            <h3 data-i18n="plantCollection">Plant Collection</h3>
+                            <p data-i18n="contactFurtherInformation">Contact us for further information.</p>
                         </div>
                     </div>
                 </article>
@@ -523,8 +563,8 @@
                     <div class="gallery-card-caption">
                         <span class="gallery-number">15</span>
                         <div>
-                            <h3>Pomegranate Plants</h3>
-                            <p>From our plant collection.</p>
+                            <h3 data-i18n="pomegranatePlants">Pomegranate Plants</h3>
+                            <p data-i18n="fromPlantCollection">From our plant collection.</p>
                         </div>
                     </div>
                 </article>
@@ -534,128 +574,115 @@
 
             <!-- NURSERY PHOTOGRAPHS -->
             <div class="gallery-section-heading">
-                <h2>Our <span>Nursery</span></h2>
-                <p>Photographs from our nursery and growing areas.</p>
+                <h2>
+                    <span data-i18n="our">Our</span>
+                    <span data-i18n="nursery">Nursery</span>
+                </h2>
+                <p data-i18n="nurseryPhotographsDescription">Photographs from our nursery and growing areas.</p>
             </div>
 
             <div class="nursery-gallery-grid">
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n1.jpeg"
-                            alt="Nursery photograph 1"
-                            loading="lazy">
+                        <img src="images/nursery/n1.jpeg" alt="Nursery photograph 1" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">16</span>
                         <div>
-                            <h3>Nursery View</h3>
-                            <p>A glimpse of our nursery.</p>
+                            <h3 data-i18n="nurseryView">Nursery View</h3>
+                            <p data-i18n="glimpseNursery">A glimpse of our nursery.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n2.jpeg"
-                            alt="Nursery photograph 2"
-                            loading="lazy">
+                        <img src="images/nursery/n2.jpeg" alt="Nursery photograph 2" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">17</span>
                         <div>
-                            <h3>Nursery View</h3>
-                            <p>From our nursery premises.</p>
+                            <h3 data-i18n="nurseryView">Nursery View</h3>
+                            <p data-i18n="nurseryPremises">From our nursery premises.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n3.jpeg"
-                            alt="Nursery photograph 3"
-                            loading="lazy">
+                        <img src="images/nursery/n3.jpeg" alt="Nursery photograph 3" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">18</span>
                         <div>
-                            <h3>Nursery Activities</h3>
-                            <p>A look around our nursery.</p>
+                            <h3 data-i18n="nurseryActivities">Nursery Activities</h3>
+                            <p data-i18n="lookAroundNursery">A look around our nursery.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n4.jpeg"
-                            alt="Nursery photograph 4"
-                            loading="lazy">
+                        <img src="images/nursery/n4.jpeg" alt="Nursery photograph 4" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">19</span>
                         <div>
-                            <h3>Nursery View</h3>
-                            <p>From our growing environment.</p>
+                            <h3 data-i18n="nurseryView">Nursery View</h3>
+                            <p data-i18n="growingEnvironment">From our growing environment.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n5.jpeg"
-                            alt="Nursery photograph 5"
-                            loading="lazy">
+                        <img src="images/nursery/n5.jpeg" alt="Nursery photograph 5" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">20</span>
                         <div>
-                            <h3>Nursery View</h3>
-                            <p>Explore our nursery photographs.</p>
+                            <h3 data-i18n="nurseryView">Nursery View</h3>
+                            <p data-i18n="exploreNurseryPhotographs">Explore our nursery photographs.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n6.jpeg"
-                            alt="Nursery photograph 6"
-                            loading="lazy">
+                        <img src="images/nursery/n6.jpeg" alt="Nursery photograph 6" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">21</span>
                         <div>
-                            <h3>Nursery Activities</h3>
-                            <p>A glimpse of our nursery.</p>
+                            <h3 data-i18n="nurseryActivities">Nursery Activities</h3>
+                            <p data-i18n="glimpseNursery">A glimpse of our nursery.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n7.jpeg"
-                            alt="Nursery photograph 7"
-                            loading="lazy">
+                        <img src="images/nursery/n7.jpeg" alt="Nursery photograph 7" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">22</span>
                         <div>
-                            <h3>Nursery and Orchard</h3>
-                            <p>Our growing environment.</p>
+                            <h3 data-i18n="nurseryAndOrchard">Nursery and Orchard</h3>
+                            <p data-i18n="growingEnvironment">Our growing environment.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/nursery/n8.jpeg"
-                            alt="Nursery photograph 8"
-                            loading="lazy">
+                        <img src="images/nursery/n8.jpeg" alt="Nursery photograph 8" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">23</span>
                         <div>
-                            <h3>Nursery View</h3>
-                            <p>From Om Sai Dalimb Nursery.</p>
+                            <h3 data-i18n="nurseryView">Nursery View</h3>
+                            <p data-i18n="fromOmSaiNursery">From Om Sai Dalimb Nursery.</p>
                         </div>
                     </div>
                 </article>
@@ -665,68 +692,63 @@
 
             <!-- ORCHARD PHOTOGRAPHS -->
             <div class="gallery-section-heading">
-                <h2>Our <span>Orchard</span></h2>
-                <p>Photographs from our orchard collection.</p>
+                <h2>
+                    <span data-i18n="our">Our</span>
+                    <span data-i18n="orchard">Orchard</span>
+                </h2>
+                <p data-i18n="orchardPhotographsDescription">Photographs from our orchard collection.</p>
             </div>
 
             <div class="nursery-gallery-grid">
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/orchard/o1.jpeg"
-                            alt="Orchard photograph 1"
-                            loading="lazy">
+                        <img src="images/orchard/o1.jpeg" alt="Orchard photograph 1" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">24</span>
                         <div>
-                            <h3>Orchard View</h3>
-                            <p>A look at our orchard.</p>
+                            <h3 data-i18n="orchardView">Orchard View</h3>
+                            <p data-i18n="lookAtOrchard">A look at our orchard.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/orchard/o2.jpeg"
-                            alt="Orchard photograph 2"
-                            loading="lazy">
+                        <img src="images/orchard/o2.jpeg" alt="Orchard photograph 2" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">25</span>
                         <div>
-                            <h3>Orchard View</h3>
-                            <p>From our orchard collection.</p>
+                            <h3 data-i18n="orchardView">Orchard View</h3>
+                            <p data-i18n="fromOrchardCollection">From our orchard collection.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/orchard/o3.jpeg"
-                            alt="Orchard photograph 3"
-                            loading="lazy">
+                        <img src="images/orchard/o3.jpeg" alt="Orchard photograph 3" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">26</span>
                         <div>
-                            <h3>Orchard View</h3>
-                            <p>Explore our orchard photographs.</p>
+                            <h3 data-i18n="orchardView">Orchard View</h3>
+                            <p data-i18n="exploreOrchardPhotographs">Explore our orchard photographs.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/orchard/p14.jpeg"
-                            alt="Additional orchard photograph"
-                            loading="lazy">
+                        <img src="images/orchard/p14.jpeg" alt="Additional orchard photograph" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">27</span>
                         <div>
-                            <h3>Orchard Collection</h3>
-                            <p>Another view from our collection.</p>
+                            <h3 data-i18n="orchardCollection">Orchard Collection</h3>
+                            <p data-i18n="anotherOrchardView">Another view from our collection.</p>
                         </div>
                     </div>
                 </article>
@@ -736,83 +758,76 @@
 
             <!-- HERO PHOTOGRAPHS -->
             <div class="gallery-section-heading">
-                <h2>Nursery <span>Highlights</span></h2>
-                <p>More photographs from our nursery collection.</p>
+                <h2>
+                    <span data-i18n="nursery">Nursery</span>
+                    <span data-i18n="highlights">Highlights</span>
+                </h2>
+                <p data-i18n="moreNurseryPhotographs">More photographs from our nursery collection.</p>
             </div>
 
             <div class="nursery-gallery-grid">
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/hero/h2.jpeg"
-                            alt="Nursery highlight photograph 2"
-                            loading="lazy">
+                        <img src="images/hero/h2.jpeg" alt="Nursery highlight photograph 2" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">28</span>
                         <div>
-                            <h3>Nursery Highlight</h3>
-                            <p>From our photograph collection.</p>
+                            <h3 data-i18n="nurseryHighlight">Nursery Highlight</h3>
+                            <p data-i18n="fromPhotographCollection">From our photograph collection.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/hero/h3.jpeg"
-                            alt="Nursery highlight photograph 3"
-                            loading="lazy">
+                        <img src="images/hero/h3.jpeg" alt="Nursery highlight photograph 3" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">29</span>
                         <div>
-                            <h3>Nursery Highlight</h3>
-                            <p>Explore our nursery.</p>
+                            <h3 data-i18n="nurseryHighlight">Nursery Highlight</h3>
+                            <p data-i18n="exploreOurNursery">Explore our nursery.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/hero/h4.jpeg"
-                            alt="Nursery highlight photograph 4"
-                            loading="lazy">
+                        <img src="images/hero/h4.jpeg" alt="Nursery highlight photograph 4" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">30</span>
                         <div>
-                            <h3>Nursery Highlight</h3>
-                            <p>From our nursery collection.</p>
+                            <h3 data-i18n="nurseryHighlight">Nursery Highlight</h3>
+                            <p data-i18n="fromNurseryCollection">From our nursery collection.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/hero/h5.jpeg"
-                            alt="Nursery highlight photograph 5"
-                            loading="lazy">
+                        <img src="images/hero/h5.jpeg" alt="Nursery highlight photograph 5" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">31</span>
                         <div>
-                            <h3>Nursery Highlight</h3>
-                            <p>A glimpse of our nursery.</p>
+                            <h3 data-i18n="nurseryHighlight">Nursery Highlight</h3>
+                            <p data-i18n="glimpseNursery">A glimpse of our nursery.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="nursery-gallery-card">
                     <div class="gallery-image">
-                        <img src="images/hero/h6.jpeg"
-                            alt="Nursery highlight photograph 6"
-                            loading="lazy">
+                        <img src="images/hero/h6.jpeg" alt="Nursery highlight photograph 6" loading="lazy">
                     </div>
                     <div class="gallery-card-caption">
                         <span class="gallery-number">32</span>
                         <div>
-                            <h3>Nursery Highlight</h3>
-                            <p>Discover our nursery collection.</p>
+                            <h3 data-i18n="nurseryHighlight">Nursery Highlight</h3>
+                            <p data-i18n="discoverNurseryCollection">Discover our nursery collection.</p>
                         </div>
                     </div>
                 </article>
@@ -822,8 +837,11 @@
 
             <!-- NURSERY VIDEOS -->
             <div class="gallery-section-heading">
-                <h2>Nursery <span>Videos</span></h2>
-                <p>Watch videos from Om Sai Dalimb Nursery.</p>
+                <h2>
+                    <span data-i18n="nursery">Nursery</span>
+                    <span data-i18n="videos">Videos</span>
+                </h2>
+                <p data-i18n="watchNurseryVideos">Watch videos from Om Sai Dalimb Nursery.</p>
             </div>
 
             <div class="gallery-video-grid">
@@ -836,8 +854,8 @@
                     </video>
 
                     <div class="gallery-video-caption">
-                        <h3>Nursery Video 1</h3>
-                        <p>A video from our nursery collection.</p>
+                        <h3 data-i18n="nurseryVideo1">Nursery Video 1</h3>
+                        <p data-i18n="videoFromNursery">A video from our nursery collection.</p>
                     </div>
 
                 </article>
@@ -850,8 +868,8 @@
                     </video>
 
                     <div class="gallery-video-caption">
-                        <h3>Nursery Video 2</h3>
-                        <p>Explore more of our nursery.</p>
+                        <h3 data-i18n="nurseryVideo2">Nursery Video 2</h3>
+                        <p data-i18n="exploreMoreNursery">Explore more of our nursery.</p>
                     </div>
 
                 </article>
@@ -860,9 +878,11 @@
 
 
             <p class="gallery-note">
-                <strong>Interested in our plants?</strong>
-                Contact Om Sai Dalimb Nursery for availability,
-                wholesale rates, and booking enquiries.
+                <strong data-i18n="interestedInPlants">Interested in our plants?</strong>
+                <span data-i18n="galleryContactNote">
+                    Contact Om Sai Dalimb Nursery for availability,
+                    wholesale rates, and booking enquiries.
+                </span>
             </p>
 
         </div>
@@ -875,11 +895,16 @@
 
             <div class="section-heading">
 
-                <span class="eyebrow">Our Available Varieties</span>
+                <span class="eyebrow" data-i18n="ourAvailableVarieties">
+                    Our Available Varieties
+                </span>
 
-                <h2>Find the Right <span>Variety</span></h2>
+                <h2>
+                    <span data-i18n="findTheRight">Find the Right</span>
+                    <span data-i18n="variety">Variety</span>
+                </h2>
 
-                <p>
+                <p data-i18n="availableVarietiesDescription">
                     Contact us to enquire about Bhagwa, Super Bhagwa,
                     and Shard King pomegranate plants.
                 </p>
@@ -892,7 +917,7 @@
                     <span class="gallery-variety-icon">🍎</span>
                     <span>
                         <strong>Bhagwa</strong>
-                        <small>View variety details</small>
+                        <small data-i18n="viewVarietyDetails">View variety details</small>
                     </span>
                     <span class="gallery-link-arrow">↗</span>
                 </a>
@@ -901,7 +926,7 @@
                     <span class="gallery-variety-icon">🌿</span>
                     <span>
                         <strong>Super Bhagwa</strong>
-                        <small>View variety details</small>
+                        <small data-i18n="viewVarietyDetails">View variety details</small>
                     </span>
                     <span class="gallery-link-arrow">↗</span>
                 </a>
@@ -910,7 +935,7 @@
                     <span class="gallery-variety-icon">🪴</span>
                     <span>
                         <strong>Shard King</strong>
-                        <small>View variety details</small>
+                        <small data-i18n="viewVarietyDetails">View variety details</small>
                     </span>
                     <span class="gallery-link-arrow">↗</span>
                 </a>
@@ -929,11 +954,15 @@
 
                 <div class="gallery-cta-content">
 
-                    <span class="eyebrow">Planning to Buy?</span>
+                    <span class="eyebrow" data-i18n="planningToBuy">
+                        Planning to Buy?
+                    </span>
 
-                    <h2>Looking for Pomegranate Plants?</h2>
+                    <h2 data-i18n="lookingForPomegranatePlants">
+                        Looking for Pomegranate Plants?
+                    </h2>
 
-                    <p>
+                    <p data-i18n="galleryCtaDescription">
                         Contact Om Sai Dalimb Nursery for plant availability,
                         wholesale rates, and booking enquiries.
                     </p>
@@ -945,11 +974,14 @@
                     <a href="https://wa.me/918007240943"
                         class="btn btn-light"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        data-i18n="enquireWhatsApp">
                         Enquire on WhatsApp
                     </a>
 
-                    <a href="contact.html" class="btn btn-outline-light">
+                    <a href="contact.html"
+                        class="btn btn-outline-light"
+                        data-i18n="contactDetails">
                         Contact Details
                     </a>
 
@@ -975,12 +1007,12 @@
 
                         <span class="brand-text">
                             <strong>Om Sai Dalimb Nursery</strong>
-                            <small>Quality Pomegranate Plants</small>
+                            <small data-i18n="brandTagline">Quality Pomegranate Plants</small>
                         </span>
 
                     </a>
 
-                    <p>
+                    <p data-i18n="footerDescription">
                         Your destination for pomegranate plants near
                         Shirdi, Maharashtra.
                     </p>
@@ -988,25 +1020,27 @@
                 </div>
 
                 <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="varieties.html">Varieties</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="contact.html">Contact</a>
+                    <h3 data-i18n="quickLinks">Quick Links</h3>
+                    <a href="index.html" data-i18n="home">Home</a>
+                    <a href="about.html" data-i18n="about">About Us</a>
+                    <a href="varieties.html" data-i18n="varieties">Varieties</a>
+                    <a href="gallery.html" data-i18n="gallery">Gallery</a>
+                    <a href="contact.html" data-i18n="contact">Contact</a>
                 </div>
 
                 <div class="footer-links">
-                    <h3>Our Varieties</h3>
+                    <h3 data-i18n="ourVarieties">Our Varieties</h3>
                     <a href="varieties.html#bhagwa">Bhagwa</a>
                     <a href="varieties.html#super-bhagwa">Super Bhagwa</a>
                     <a href="varieties.html#shard-king">Shard King</a>
                 </div>
 
                 <div class="footer-contact">
-                    <h3>Contact Us</h3>
+                    <h3 data-i18n="contactUs">Contact Us</h3>
 
-                    <p>📍 Astagaon Phata, near Shirdi, Maharashtra 423107</p>
+                    <p data-i18n="nurseryAddress">
+                        📍 Astagaon Phata, near Shirdi, Maharashtra 423107
+                    </p>
 
                     <p>
                         📞
@@ -1023,7 +1057,8 @@
                     <a href="https://wa.me/918007240943"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="footer-whatsapp">
+                        class="footer-whatsapp"
+                        data-i18n="chatWhatsApp">
                         Chat on WhatsApp →
                     </a>
                 </div>
@@ -1033,7 +1068,7 @@
             <div class="footer-bottom">
                 <p>
                     © <span id="currentYear"></span>
-                    Om Sai Dalimb Nursery. All rights reserved.
+                    <span data-i18n="copyrightText">Om Sai Dalimb Nursery. All rights reserved.</span>
                 </p>
             </div>
 
@@ -1053,32 +1088,62 @@
     </a>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- NAVIGATION AND FOOTER FUNCTIONALITY -->
     <script>
-        const navToggle = document.getElementById("navToggle");
-        const navMenu = document.getElementById("navMenu");
+        (function () {
+            const navToggle = document.getElementById("navToggle");
+            const navMenu = document.getElementById("navMenu");
+            const yearElement = document.getElementById("currentYear");
 
-        if (navToggle && navMenu) {
-            navToggle.addEventListener("click", function () {
-                const isOpen = navMenu.classList.toggle("show");
-
-                navToggle.setAttribute("aria-expanded", isOpen);
-                navToggle.textContent = isOpen ? "✕" : "☰";
-            });
-
-            navMenu.querySelectorAll("a").forEach(function (link) {
-                link.addEventListener("click", function () {
+            if (navToggle && navMenu) {
+                function closeMenu() {
                     navMenu.classList.remove("show");
                     navToggle.setAttribute("aria-expanded", "false");
+                    navToggle.setAttribute("aria-label", "Open navigation menu");
                     navToggle.textContent = "☰";
-                });
-            });
-        }
+                }
 
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
+                navToggle.addEventListener("click", function () {
+                    const isOpen = navMenu.classList.toggle("show");
+
+                    navToggle.setAttribute("aria-expanded", String(isOpen));
+                    navToggle.setAttribute(
+                        "aria-label",
+                        isOpen ? "Close navigation menu" : "Open navigation menu"
+                    );
+
+                    navToggle.textContent = isOpen ? "✕" : "☰";
+                });
+
+                navMenu.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", closeMenu);
+                });
+
+                document.addEventListener("click", function (event) {
+                    if (
+                        !navMenu.contains(event.target) &&
+                        !navToggle.contains(event.target)
+                    ) {
+                        closeMenu();
+                    }
+                });
+
+                window.addEventListener("resize", function () {
+                    if (window.innerWidth > 768) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
     </script>
-<script src="js/language.js" defer></script>
+
+    <!-- Load the language script only once -->
+    <script src="js/language.js"></script>
+
 </body>
 
 </html>
